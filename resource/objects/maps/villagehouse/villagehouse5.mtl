@@ -1,0 +1,24 @@
+newmtl Village_WindMill_Roof
+Kd 1 1 1
+map_Kd Village_WindMill_Roof_Albedo.png
+map_Bump Village_WindMill_Roof_Normal.png
+illum 2
+
+newmtl Village_WindMill_Wall
+Kd 1 1 1
+map_Kd Village_WindMill_Wall_Albedo.png
+map_Bump Village_WindMill_Wall_Normal.png
+illum 2
+
+newmtl Village_WindMill_Vr
+Kd 1 1 1
+map_Kd Village_WindMill_Vr_Albedo.png
+map_Bump Village_WindMill_Vr_Normal.png
+illum 2
+
+newmtl Village_WindMill_Wood
+Kd 1 1 1
+map_Kd Village_WindMill_Wood_Albedo.png
+map_Bump Village_WindMill_Wood_Normal.png
+illum 2
+

@@ -1,0 +1,14 @@
+newmtl Fancy_Tavern
+Kd 1 1 1
+Ks 0 0 0
+map_Kd Fancy_Tavern.png
+map_Bump Fancy_Tavern_normal.png
+illum 2
+
+newmtl Decor
+Kd 1 1 1
+Ks 0 0 0
+map_Kd Decor.png
+map_Bump Decor_normal.png
+illum 2
+

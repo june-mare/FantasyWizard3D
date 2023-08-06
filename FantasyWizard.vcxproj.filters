@@ -1,0 +1,790 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="resource\shader\_usedGLSL.memo">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="resource\shader\AssimpAnimation.frag">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="resource\shader\AssimpAnimation.vert">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="resource\shader\AssimpModel.frag">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="resource\shader\AssimpModel.vert">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="resource\shader\down_sampling.frag">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="resource\shader\fade.frag">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="resource\shader\gauge.frag">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="resource\shader\gauge.vert">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="resource\shader\gaussian_blur.frag">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="resource\shader\high_pass_filter.frag">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="resource\shader\shadow.frag">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="resource\shader\shadow.vert">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="resource\shader\shadowAnim.frag">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="resource\shader\shadowAnim.vert">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="resource\shader\simple2D.vert">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="resource\shader\skybox.frag">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="resource\shader\skybox.vert">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="resource\shader\standard_2D.frag">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="resource\shader\standard_2D.vert">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="resource\shader\up_sampling.frag">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="resource\txt\xxx.dat">
+      <Filter>resource\txt</Filter>
+    </None>
+    <None Include="resource\txt\xxxx.dat">
+      <Filter>resource\txt</Filter>
+    </None>
+    <None Include="resource\shader\Collision.vert">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="resource\shader\Collision.frag">
+      <Filter>resource\shader</Filter>
+    </None>
+    <None Include="resource\objects\maps\map1.json">
+      <Filter>resource\txt</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{5b2e9fa2-0bbd-4856-834c-5b7f394cb71a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{fc7ae721-6b19-4973-bc99-37f5cd3bbde1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\assimp">
+      <UniqueIdentifier>{125be268-7a1e-424e-8cca-cd341d8bf424}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\engine">
+      <UniqueIdentifier>{817bbff1-c5a8-443b-a547-91ebdc8a3cc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\glad">
+      <UniqueIdentifier>{d7b2dc14-329c-45be-9ac7-1ea33b3f2219}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\icon">
+      <UniqueIdentifier>{0ea69e10-4569-42b1-aa76-4d1cb3085f74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\imgui">
+      <UniqueIdentifier>{1cdfe0bb-dcbc-4d50-b68c-5f448d94116f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\stbi">
+      <UniqueIdentifier>{31ec7412-3a25-4548-aa47-ff3859d46e2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\myprog">
+      <UniqueIdentifier>{a3ae36ac-2ed0-48e0-92de-685f087d9427}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\myprog\2dimage">
+      <UniqueIdentifier>{1a19b975-3e21-4cb6-b9cf-bb6200e23ae6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\myprog\audio">
+      <UniqueIdentifier>{0027aceb-d18f-4247-8fd5-711ef321e6e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\myprog\buffer">
+      <UniqueIdentifier>{14f5cd0b-b59d-4be3-9729-07f9aa643484}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\myprog\collision">
+      <UniqueIdentifier>{0164ce7b-59fc-4a57-adfe-18f494e32373}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\myprog\component">
+      <UniqueIdentifier>{ce983ee8-c4a8-46ef-86ea-1e433f46f08f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\myprog\datastruct">
+      <UniqueIdentifier>{bae8b600-eed9-42e8-9849-807e112630ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\myprog\debug">
+      <UniqueIdentifier>{5ff6d818-0a0e-4ebe-8c86-f45e1b004879}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\myprog\gameobject">
+      <UniqueIdentifier>{ab49430f-baca-4df8-8a0d-87cb1ace5250}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\myprog\movecalc">
+      <UniqueIdentifier>{960ff43d-022f-4a90-a381-bcfcdf05d59d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\myprog\scene">
+      <UniqueIdentifier>{a4a9e17e-1f13-408c-80bc-79c64d634c4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\myprog\shader">
+      <UniqueIdentifier>{6f3f933e-a19c-4a13-ac27-8a7f533419b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\myprog\state">
+      <UniqueIdentifier>{51902bdf-94d3-419a-92bc-aada794c6417}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\myprog\system">
+      <UniqueIdentifier>{8a7b80de-a265-463b-8bc2-697bcf45f765}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\myprog\time">
+      <UniqueIdentifier>{7ca174fe-895d-48a3-973d-17fd2940819f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\myprog\ui">
+      <UniqueIdentifier>{b72c6a9a-9518-4c30-b80f-0d042b115d9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\myprog\window">
+      <UniqueIdentifier>{2068b900-0f87-49c8-9658-f54d8b10bbd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\myprog\gameobject\actor">
+      <UniqueIdentifier>{89e57a20-43ee-4d46-8061-97314c46dbde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\shader">
+      <UniqueIdentifier>{53da5fba-8c03-40ba-a947-349c95974da4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\audio">
+      <UniqueIdentifier>{ca41d547-34e5-4ebc-92ce-c8fd8f70d4f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\ttf">
+      <UniqueIdentifier>{50b1cb22-9b17-405e-9f78-75ce363eb1c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\txt">
+      <UniqueIdentifier>{4c508009-fae3-4ea0-9976-e344900603b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\icon">
+      <UniqueIdentifier>{4317a2dc-064f-404a-8412-75e7c7e6ad30}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\Assimp\Animation.cpp">
+      <Filter>source\assimp</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Assimp\Animator.cpp">
+      <Filter>source\assimp</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Assimp\Camera.cpp">
+      <Filter>source\assimp</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Assimp\Lighting.cpp">
+      <Filter>source\assimp</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Assimp\Material.cpp">
+      <Filter>source\assimp</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Assimp\Mesh.cpp">
+      <Filter>source\assimp</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Assimp\Model.cpp">
+      <Filter>source\assimp</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Assimp\skyBox.cpp">
+      <Filter>source\assimp</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Engine\Engine.cpp">
+      <Filter>source\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="source\glad\src\glad.c">
+      <Filter>source\glad</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ImGui\imgui.cpp">
+      <Filter>source\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ImGui\imgui_demo.cpp">
+      <Filter>source\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ImGui\imgui_draw.cpp">
+      <Filter>source\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ImGui\imgui_impl_glfw.cpp">
+      <Filter>source\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ImGui\imgui_impl_opengl3.cpp">
+      <Filter>source\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ImGui\imgui_tables.cpp">
+      <Filter>source\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ImGui\imgui_widgets.cpp">
+      <Filter>source\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\2DImage\BulletList.cpp">
+      <Filter>source\myprog\2dimage</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\2DImage\Sprite.cpp">
+      <Filter>source\myprog\2dimage</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\2DImage\Texture.cpp">
+      <Filter>source\myprog\2dimage</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\2DImage\TileMap.cpp">
+      <Filter>source\myprog\2dimage</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\Audio\EasyAudio.cpp">
+      <Filter>source\myprog\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\BufferObject\BufferObject.cpp">
+      <Filter>source\myprog\buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\BufferObject\CameraBufferObject.cpp">
+      <Filter>source\myprog\buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\BufferObject\FrameBufferObject.cpp">
+      <Filter>source\myprog\buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\BufferObject\UniformBufferObject.cpp">
+      <Filter>source\myprog\buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\Collision\Collision3D.cpp">
+      <Filter>source\myprog\collision</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\Component\Gage.cpp">
+      <Filter>source\myprog\component</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\Component\LightComponent.cpp">
+      <Filter>source\myprog\component</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\Component\MaterialComponent.cpp">
+      <Filter>source\myprog\component</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\Component\MoveTimer.cpp">
+      <Filter>source\myprog\component</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\Component\NotOutOfRange.cpp">
+      <Filter>source\myprog\component</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\Component\OutOfScreen.cpp">
+      <Filter>source\myprog\component</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\Component\SpriteScaleRotation.cpp">
+      <Filter>source\myprog\component</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\DataStruct\ImGuiTextGlyphRange.cpp">
+      <Filter>source\myprog\datastruct</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\DataStruct\Status.cpp">
+      <Filter>source\myprog\datastruct</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\DataStruct\TextWindow.cpp">
+      <Filter>source\myprog\datastruct</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\Debug\Debug.cpp">
+      <Filter>source\myprog\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\Debug\MyDebugImGui.cpp">
+      <Filter>source\myprog\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\GameObject\GameObject.cpp">
+      <Filter>source\myprog\gameobject</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\GameObject\ObjectManager.cpp">
+      <Filter>source\myprog\gameobject</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\GameObject\ObjectSprite.cpp">
+      <Filter>source\myprog\gameobject</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\GameObject\ObjectTag.cpp">
+      <Filter>source\myprog\gameobject</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\GameObject\Transform.cpp">
+      <Filter>source\myprog\gameobject</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\GameObject\Actor\Archer.cpp">
+      <Filter>source\myprog\gameobject\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\GameObject\Actor\Beast.cpp">
+      <Filter>source\myprog\gameobject\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\GameObject\Actor\LoadingGauge.cpp">
+      <Filter>source\myprog\gameobject\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\GameObject\Actor\Paladin.cpp">
+      <Filter>source\myprog\gameobject\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\GameObject\Actor\VillageMan.cpp">
+      <Filter>source\myprog\gameobject\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\Window\GLFWWindow.cpp">
+      <Filter>source\myprog\window</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\Window\Viewport.cpp">
+      <Filter>source\myprog\window</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\UI\ClearUI.cpp">
+      <Filter>source\myprog\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\Time\ClearTimeManager.cpp">
+      <Filter>source\myprog\time</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\Time\Time.cpp">
+      <Filter>source\myprog\time</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\System\InputSystem.cpp">
+      <Filter>source\myprog\system</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\Shader\Shader.cpp">
+      <Filter>source\myprog\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\Scene\Scene.cpp">
+      <Filter>source\myprog\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\Scene\TitleScene.cpp">
+      <Filter>source\myprog\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\Scene\VillageScene.cpp">
+      <Filter>source\myprog\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Main.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\Debug\GLDebug.cpp">
+      <Filter>source\myprog\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\GameObject\Actor\DefaultCube.cpp">
+      <Filter>source\myprog\gameobject\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\Collision\Collider.cpp">
+      <Filter>source\myprog\collision</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\Collision\DrawCollision.cpp">
+      <Filter>source\myprog\collision</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MySource\Component\PlayerController.cpp">
+      <Filter>source\myprog\component</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\Assimp\Animation.h">
+      <Filter>source\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Assimp\Animator.h">
+      <Filter>source\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Assimp\AnimResultLocation.h">
+      <Filter>source\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Assimp\Bone.h">
+      <Filter>source\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Assimp\BoneInfo.h">
+      <Filter>source\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Assimp\Camera.h">
+      <Filter>source\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Assimp\GlmHelper.h">
+      <Filter>source\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Assimp\Lighting.h">
+      <Filter>source\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Assimp\Material.h">
+      <Filter>source\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Assimp\Mesh.h">
+      <Filter>source\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Assimp\Model.h">
+      <Filter>source\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Assimp\skyBox.h">
+      <Filter>source\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Engine\Engine.h">
+      <Filter>source\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="source\glad\include\glad\glad.h">
+      <Filter>source\glad</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ImGui\imconfig.h">
+      <Filter>source\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ImGui\imgui.h">
+      <Filter>source\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ImGui\imgui_impl_glfw.h">
+      <Filter>source\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ImGui\imgui_impl_opengl3.h">
+      <Filter>source\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ImGui\imgui_impl_opengl3_loader.h">
+      <Filter>source\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ImGui\imgui_internal.h">
+      <Filter>source\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ImGui\imstb_rectpack.h">
+      <Filter>source\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ImGui\imstb_textedit.h">
+      <Filter>source\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ImGui\imstb_truetype.h">
+      <Filter>source\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\2DImage\BulletList.h">
+      <Filter>source\myprog\2dimage</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\2DImage\CharacterList.h">
+      <Filter>source\myprog\2dimage</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\2DImage\EffectList.h">
+      <Filter>source\myprog\2dimage</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\2DImage\Sprite.h">
+      <Filter>source\myprog\2dimage</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\2DImage\SpritePriority.h">
+      <Filter>source\myprog\2dimage</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\2DImage\Texture.h">
+      <Filter>source\myprog\2dimage</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\2DImage\TileMap.h">
+      <Filter>source\myprog\2dimage</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\2DImage\TileMapScroll.h">
+      <Filter>source\myprog\2dimage</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\2DImage\TileMapTexcoord.h">
+      <Filter>source\myprog\2dimage</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Audio\AudioSettings.h">
+      <Filter>source\myprog\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Audio\EasyAudio.h">
+      <Filter>source\myprog\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\BufferObject\AnimBuffer.h">
+      <Filter>source\myprog\buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\BufferObject\BufferObject.h">
+      <Filter>source\myprog\buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\BufferObject\CameraBufferObject.h">
+      <Filter>source\myprog\buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\BufferObject\FrameBufferObject.h">
+      <Filter>source\myprog\buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\BufferObject\UniformBufferObject.h">
+      <Filter>source\myprog\buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\BufferObject\VertexArray.h">
+      <Filter>source\myprog\buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Collision\Collider.h">
+      <Filter>source\myprog\collision</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Collision\Collision3D.h">
+      <Filter>source\myprog\collision</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Collision\CollisionTable.h">
+      <Filter>source\myprog\collision</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Collision\StdCollision.h">
+      <Filter>source\myprog\collision</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Component\ActivTimer.h">
+      <Filter>source\myprog\component</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Component\Animator2D.h">
+      <Filter>source\myprog\component</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Component\AnimComponent.h">
+      <Filter>source\myprog\component</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Component\AudioEvent.h">
+      <Filter>source\myprog\component</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Component\Component.h">
+      <Filter>source\myprog\component</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Component\ComponentInclude.h">
+      <Filter>source\myprog\component</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Component\EndEffect.h">
+      <Filter>source\myprog\component</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Component\Explosion.h">
+      <Filter>source\myprog\component</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Component\FadeController.h">
+      <Filter>source\myprog\component</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Component\Gage.h">
+      <Filter>source\myprog\component</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Component\GLTFMeshRenderer.h">
+      <Filter>source\myprog\component</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Component\LightComponent.h">
+      <Filter>source\myprog\component</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Component\MaterialComponent.h">
+      <Filter>source\myprog\component</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Component\MeshRenderer.h">
+      <Filter>source\myprog\component</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Component\MoveTimer.h">
+      <Filter>source\myprog\component</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Component\NotOutOfRange.h">
+      <Filter>source\myprog\component</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Component\OutOfScreen.h">
+      <Filter>source\myprog\component</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Component\PlayerController.h">
+      <Filter>source\myprog\component</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Component\Renderer.h">
+      <Filter>source\myprog\component</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Component\Score.h">
+      <Filter>source\myprog\component</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Component\ScoreManager.h">
+      <Filter>source\myprog\component</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Component\ScrollObject.h">
+      <Filter>source\myprog\component</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Component\SpriteScaleRotation.h">
+      <Filter>source\myprog\component</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Component\text.h">
+      <Filter>source\myprog\component</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Component\WeaponUI.h">
+      <Filter>source\myprog\component</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\DataStruct\AnimUseList.h">
+      <Filter>source\myprog\datastruct</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\DataStruct\DataStructInclude.h">
+      <Filter>source\myprog\datastruct</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\DataStruct\ImGuiTextGlyphRange.h">
+      <Filter>source\myprog\datastruct</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\DataStruct\InstanceModelDataList.h">
+      <Filter>source\myprog\datastruct</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\DataStruct\MovePram.h">
+      <Filter>source\myprog\datastruct</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\DataStruct\ShotTimer.h">
+      <Filter>source\myprog\datastruct</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\DataStruct\Status.h">
+      <Filter>source\myprog\datastruct</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\DataStruct\TextWindow.h">
+      <Filter>source\myprog\datastruct</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\DataStruct\useImGui.h">
+      <Filter>source\myprog\datastruct</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Debug\Debug.h">
+      <Filter>source\myprog\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Debug\MyDebugImGui.h">
+      <Filter>source\myprog\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\GameObject\GameObject.h">
+      <Filter>source\myprog\gameobject</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\GameObject\ObjectManager.h">
+      <Filter>source\myprog\gameobject</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\GameObject\ObjectSprite.h">
+      <Filter>source\myprog\gameobject</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\GameObject\ObjectTag.h">
+      <Filter>source\myprog\gameobject</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\GameObject\Transform.h">
+      <Filter>source\myprog\gameobject</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\GameObject\Actor\Archer.h">
+      <Filter>source\myprog\gameobject\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\GameObject\Actor\Beast.h">
+      <Filter>source\myprog\gameobject\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\GameObject\Actor\LoadingGauge.h">
+      <Filter>source\myprog\gameobject\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\GameObject\Actor\Paladin.h">
+      <Filter>source\myprog\gameobject\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\GameObject\Actor\VillageMan.h">
+      <Filter>source\myprog\gameobject\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\MoveCalc\Lerp.h">
+      <Filter>source\myprog\movecalc</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Window\GLFWWindow.h">
+      <Filter>source\myprog\window</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Window\Viewport.h">
+      <Filter>source\myprog\window</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\UI\ClearUI.h">
+      <Filter>source\myprog\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Time\ClearTimeManager.h">
+      <Filter>source\myprog\time</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Time\StopAndSlowry.h">
+      <Filter>source\myprog\time</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Time\Time.h">
+      <Filter>source\myprog\time</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\System\FileSystem.h">
+      <Filter>source\myprog\system</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\System\InputSystem.h">
+      <Filter>source\myprog\system</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\State\IState.h">
+      <Filter>source\myprog\state</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Shader\Shader.h">
+      <Filter>source\myprog\shader</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Scene\Scene.h">
+      <Filter>source\myprog\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Scene\TitleScene.h">
+      <Filter>source\myprog\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Scene\VillageScene.h">
+      <Filter>source\myprog\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="source\stbi\ft2build.h">
+      <Filter>source\stbi</Filter>
+    </ClInclude>
+    <ClInclude Include="source\stbi\image_DXT.h">
+      <Filter>source\stbi</Filter>
+    </ClInclude>
+    <ClInclude Include="source\stbi\image_helper.h">
+      <Filter>source\stbi</Filter>
+    </ClInclude>
+    <ClInclude Include="source\stbi\SOIL.h">
+      <Filter>source\stbi</Filter>
+    </ClInclude>
+    <ClInclude Include="source\stbi\stb_image.h">
+      <Filter>source\stbi</Filter>
+    </ClInclude>
+    <ClInclude Include="source\stbi\stb_image_aug.h">
+      <Filter>source\stbi</Filter>
+    </ClInclude>
+    <ClInclude Include="source\icon\resource.h">
+      <Filter>source\icon</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Debug\GLDebug.h">
+      <Filter>source\myprog\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\GameObject\Actor\DefaultCube.h">
+      <Filter>source\myprog\gameobject\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Collision\DrawCollision.h">
+      <Filter>source\myprog\collision</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Component\Falling.h">
+      <Filter>source\myprog\component</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Time\Timer.h">
+      <Filter>source\myprog\time</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MySource\Component\DamagePlayer.h">
+      <Filter>source\myprog\component</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="resource\audio\clear.wav">
+      <Filter>resource\audio</Filter>
+    </Media>
+    <Media Include="resource\audio\cure.wav">
+      <Filter>resource\audio</Filter>
+    </Media>
+    <Media Include="resource\audio\enter.wav">
+      <Filter>resource\audio</Filter>
+    </Media>
+    <Media Include="resource\audio\Explosion1.wav">
+      <Filter>resource\audio</Filter>
+    </Media>
+    <Media Include="resource\audio\Explosion2.wav">
+      <Filter>resource\audio</Filter>
+    </Media>
+    <Media Include="resource\audio\gage.wav">
+      <Filter>resource\audio</Filter>
+    </Media>
+    <Media Include="resource\audio\gammeover.wav">
+      <Filter>resource\audio</Filter>
+    </Media>
+    <Media Include="resource\audio\laser.wav">
+      <Filter>resource\audio</Filter>
+    </Media>
+    <Media Include="resource\audio\select.wav">
+      <Filter>resource\audio</Filter>
+    </Media>
+    <Media Include="resource\audio\stage1.wav">
+      <Filter>resource\audio</Filter>
+    </Media>
+    <Media Include="resource\audio\stage1Boss.wav">
+      <Filter>resource\audio</Filter>
+    </Media>
+    <Media Include="resource\audio\title.wav">
+      <Filter>resource\audio</Filter>
+    </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="resource\ttf\x12y16pxMaruMonica.ttf">
+      <Filter>resource\ttf</Filter>
+    </Font>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="resource\shader\_ShaderUseName.txt">
+      <Filter>resource\shader</Filter>
+    </Text>
+    <Text Include="resource\txt\Input.txt">
+      <Filter>resource\txt</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="FantasyWizard.rc">
+      <Filter>source\icon</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resource\textures\windowIcon32x32.ico">
+      <Filter>resource\icon</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

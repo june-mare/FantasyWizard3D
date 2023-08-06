@@ -1,0 +1,49 @@
+layout in 順番
+layout (location = 0) in vec3 aPos;			ポジション
+layout (location = 1) in vec3 aNormal;		ノーマルマップ
+layout (location = 2) in vec2 aTexCoords;	テックスコード
+layout (location = 3) in vec3 aRotate;		回転
+layout (location = 4) in vec3 aBitRotate;	bit回転
+layout (location = 5) in ivec4 aBoneIds;	BoneのID
+layout (location = 6) in vec4 aWeights;		Boneと頂点までの比重
+
+プログラムからの入力は下記のuniformのなまえからShaderを通して入力
+例　shader->SetFloat("model",glm::mat4);
+
+uniform 名前
+uniform mat4 model;			モデルのトランスフォーム
+uniform mat4 view;			カメラのview
+uniform mat4 projection;	カメラのプロジェクション
+uniform vec3 cameraPos;		カメラのポジション
+uniform vec4 screenToCrip;	画面のクリップ座標系
+uniform vec3 lightColor;	ライトの色
+uniform vec3 lightPos;		ライトの位置
+uniform vec3 objectColor;	オブジェクトのベース色
+uniform float blurRatio;	ぼかし具合　(0～1)
+uniform mat4 shadow;		影 
+
+layout out 順番
+layout(location = 0) out vec3 Position;
+layout(location = 1) out vec2 TexCoords;
+layout(location = 2) out vec3 Normal;
+layout(location = 3) in vec3 aRotate;		回転
+layout(location = 4) in vec3 aBitRotate;	bit回転
+layout(location = 5) in ivec4 aBoneIds;		BoneのID
+layout(location = 6) in vec4 aWeights;		Boneと頂点までの比重
+
+frag sampler2D 名前
+uniform sampler2D texture_diffuse1;
+uniform sampler2D texture_normal1;
+uniform sampler2D texture_specular1;
+
+frag samplerCude 名前
+uniform samplerCube skybox;
+
+time calc
+/*LARGE_INTEGER frep;
+		QueryPerformanceFrequency(&frep);
+		LARGE_INTEGER start, end;
+		QueryPerformanceCounter(&start);*/
+		/*	QueryPerformanceCounter(&end);
+			double time = static_cast<double>(end.QuadPart - start.QuadPart) * 1000.0 / frep.QuadPart;
+			LOG("%f 経過", time);*/

@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{0c0b2fee-a8fe-442a-aab8-93198f407cb7}</ProjectGuid>
+    <RootNamespace>FantasyWizard</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)source\Assimp\;$(ProjectDir)source\MySource\;$(ProjectDir)source\glad\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ExternalWarningLevel>Level1</ExternalWarningLevel>
+      <DisableSpecificWarnings>4003;4005;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)source\Assimp\;$(ProjectDir)source\MySource\;$(ProjectDir)source\glad\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ExternalWarningLevel>Level1</ExternalWarningLevel>
+      <DisableSpecificWarnings>4003;4005;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)source\Assimp\;$(ProjectDir)source\MySource\;$(ProjectDir)source\glad\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ExternalWarningLevel>Level1</ExternalWarningLevel>
+      <DisableSpecificWarnings>4003;4005;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)source\Assimp\;$(ProjectDir)source\MySource\;$(ProjectDir)source\glad\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ExternalWarningLevel>Level1</ExternalWarningLevel>
+      <DisableSpecificWarnings>4003;4005;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="resource\objects\maps\map1.json" />
+    <None Include="resource\shader\AssimpAnimation.frag" />
+    <None Include="resource\shader\AssimpAnimation.vert" />
+    <None Include="resource\shader\AssimpModel.frag" />
+    <None Include="resource\shader\AssimpModel.vert" />
+    <None Include="resource\shader\Collision.frag" />
+    <None Include="resource\shader\Collision.vert" />
+    <None Include="resource\shader\down_sampling.frag" />
+    <None Include="resource\shader\fade.frag" />
+    <None Include="resource\shader\gauge.frag" />
+    <None Include="resource\shader\gauge.vert" />
+    <None Include="resource\shader\gaussian_blur.frag" />
+    <None Include="resource\shader\high_pass_filter.frag" />
+    <None Include="resource\shader\shadow.frag" />
+    <None Include="resource\shader\shadow.vert" />
+    <None Include="resource\shader\shadowAnim.frag" />
+    <None Include="resource\shader\shadowAnim.vert" />
+    <None Include="resource\shader\simple2D.vert" />
+    <None Include="resource\shader\skybox.frag" />
+    <None Include="resource\shader\skybox.vert" />
+    <None Include="resource\shader\standard_2D.frag" />
+    <None Include="resource\shader\standard_2D.vert" />
+    <None Include="resource\shader\up_sampling.frag" />
+    <None Include="resource\shader\_usedGLSL.memo" />
+    <None Include="resource\txt\xxx.dat" />
+    <None Include="resource\txt\xxxx.dat" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\Assimp\Animation.cpp" />
+    <ClCompile Include="source\Assimp\Animator.cpp" />
+    <ClCompile Include="source\Assimp\Camera.cpp" />
+    <ClCompile Include="source\Assimp\Lighting.cpp" />
+    <ClCompile Include="source\Assimp\Material.cpp" />
+    <ClCompile Include="source\Assimp\Mesh.cpp" />
+    <ClCompile Include="source\Assimp\Model.cpp" />
+    <ClCompile Include="source\Assimp\skyBox.cpp" />
+    <ClCompile Include="source\Engine\Engine.cpp" />
+    <ClCompile Include="source\glad\src\glad.c" />
+    <ClCompile Include="source\ImGui\imgui.cpp" />
+    <ClCompile Include="source\ImGui\imgui_demo.cpp" />
+    <ClCompile Include="source\ImGui\imgui_draw.cpp" />
+    <ClCompile Include="source\ImGui\imgui_impl_glfw.cpp" />
+    <ClCompile Include="source\ImGui\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="source\ImGui\imgui_tables.cpp" />
+    <ClCompile Include="source\ImGui\imgui_widgets.cpp" />
+    <ClCompile Include="source\Main.cpp" />
+    <ClCompile Include="source\MySource\2DImage\BulletList.cpp" />
+    <ClCompile Include="source\MySource\2DImage\Sprite.cpp" />
+    <ClCompile Include="source\MySource\2DImage\Texture.cpp" />
+    <ClCompile Include="source\MySource\2DImage\TileMap.cpp" />
+    <ClCompile Include="source\MySource\Audio\EasyAudio.cpp" />
+    <ClCompile Include="source\MySource\BufferObject\BufferObject.cpp" />
+    <ClCompile Include="source\MySource\BufferObject\CameraBufferObject.cpp" />
+    <ClCompile Include="source\MySource\BufferObject\FrameBufferObject.cpp" />
+    <ClCompile Include="source\MySource\BufferObject\UniformBufferObject.cpp" />
+    <ClCompile Include="source\MySource\Collision\Collider.cpp" />
+    <ClCompile Include="source\MySource\Collision\Collision3D.cpp" />
+    <ClCompile Include="source\MySource\Collision\DrawCollision.cpp" />
+    <ClCompile Include="source\MySource\Component\Gage.cpp" />
+    <ClCompile Include="source\MySource\Component\LightComponent.cpp" />
+    <ClCompile Include="source\MySource\Component\MaterialComponent.cpp" />
+    <ClCompile Include="source\MySource\Component\MoveTimer.cpp" />
+    <ClCompile Include="source\MySource\Component\NotOutOfRange.cpp" />
+    <ClCompile Include="source\MySource\Component\OutOfScreen.cpp" />
+    <ClCompile Include="source\MySource\Component\PlayerController.cpp" />
+    <ClCompile Include="source\MySource\Component\SpriteScaleRotation.cpp" />
+    <ClCompile Include="source\MySource\DataStruct\ImGuiTextGlyphRange.cpp" />
+    <ClCompile Include="source\MySource\DataStruct\Status.cpp" />
+    <ClCompile Include="source\MySource\DataStruct\TextWindow.cpp" />
+    <ClCompile Include="source\MySource\Debug\Debug.cpp" />
+    <ClCompile Include="source\MySource\Debug\GLDebug.cpp" />
+    <ClCompile Include="source\MySource\Debug\MyDebugImGui.cpp" />
+    <ClCompile Include="source\MySource\GameObject\Actor\Archer.cpp" />
+    <ClCompile Include="source\MySource\GameObject\Actor\Beast.cpp" />
+    <ClCompile Include="source\MySource\GameObject\Actor\DefaultCube.cpp" />
+    <ClCompile Include="source\MySource\GameObject\Actor\LoadingGauge.cpp" />
+    <ClCompile Include="source\MySource\GameObject\Actor\Paladin.cpp" />
+    <ClCompile Include="source\MySource\GameObject\Actor\VillageMan.cpp" />
+    <ClCompile Include="source\MySource\GameObject\GameObject.cpp" />
+    <ClCompile Include="source\MySource\GameObject\ObjectManager.cpp" />
+    <ClCompile Include="source\MySource\GameObject\ObjectSprite.cpp" />
+    <ClCompile Include="source\MySource\GameObject\ObjectTag.cpp" />
+    <ClCompile Include="source\MySource\GameObject\Transform.cpp" />
+    <ClCompile Include="source\MySource\Scene\Scene.cpp" />
+    <ClCompile Include="source\MySource\Scene\TitleScene.cpp" />
+    <ClCompile Include="source\MySource\Scene\VillageScene.cpp" />
+    <ClCompile Include="source\MySource\Shader\Shader.cpp" />
+    <ClCompile Include="source\MySource\System\InputSystem.cpp" />
+    <ClCompile Include="source\MySource\Time\ClearTimeManager.cpp" />
+    <ClCompile Include="source\MySource\Time\Time.cpp" />
+    <ClCompile Include="source\MySource\UI\ClearUI.cpp" />
+    <ClCompile Include="source\MySource\Window\GLFWWindow.cpp" />
+    <ClCompile Include="source\MySource\Window\Viewport.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\Assimp\Animation.h" />
+    <ClInclude Include="source\Assimp\Animator.h" />
+    <ClInclude Include="source\Assimp\AnimResultLocation.h" />
+    <ClInclude Include="source\Assimp\Bone.h" />
+    <ClInclude Include="source\Assimp\BoneInfo.h" />
+    <ClInclude Include="source\Assimp\Camera.h" />
+    <ClInclude Include="source\Assimp\GlmHelper.h" />
+    <ClInclude Include="source\Assimp\Lighting.h" />
+    <ClInclude Include="source\Assimp\Material.h" />
+    <ClInclude Include="source\Assimp\Mesh.h" />
+    <ClInclude Include="source\Assimp\Model.h" />
+    <ClInclude Include="source\Assimp\skyBox.h" />
+    <ClInclude Include="source\Engine\Engine.h" />
+    <ClInclude Include="source\glad\include\glad\glad.h" />
+    <ClInclude Include="source\icon\resource.h" />
+    <ClInclude Include="source\ImGui\imconfig.h" />
+    <ClInclude Include="source\ImGui\imgui.h" />
+    <ClInclude Include="source\ImGui\imgui_impl_glfw.h" />
+    <ClInclude Include="source\ImGui\imgui_impl_opengl3.h" />
+    <ClInclude Include="source\ImGui\imgui_impl_opengl3_loader.h" />
+    <ClInclude Include="source\ImGui\imgui_internal.h" />
+    <ClInclude Include="source\ImGui\imstb_rectpack.h" />
+    <ClInclude Include="source\ImGui\imstb_textedit.h" />
+    <ClInclude Include="source\ImGui\imstb_truetype.h" />
+    <ClInclude Include="source\MySource\2DImage\BulletList.h" />
+    <ClInclude Include="source\MySource\2DImage\CharacterList.h" />
+    <ClInclude Include="source\MySource\2DImage\EffectList.h" />
+    <ClInclude Include="source\MySource\2DImage\Sprite.h" />
+    <ClInclude Include="source\MySource\2DImage\SpritePriority.h" />
+    <ClInclude Include="source\MySource\2DImage\Texture.h" />
+    <ClInclude Include="source\MySource\2DImage\TileMap.h" />
+    <ClInclude Include="source\MySource\2DImage\TileMapScroll.h" />
+    <ClInclude Include="source\MySource\2DImage\TileMapTexcoord.h" />
+    <ClInclude Include="source\MySource\Audio\AudioSettings.h" />
+    <ClInclude Include="source\MySource\Audio\EasyAudio.h" />
+    <ClInclude Include="source\MySource\BufferObject\AnimBuffer.h" />
+    <ClInclude Include="source\MySource\BufferObject\BufferObject.h" />
+    <ClInclude Include="source\MySource\BufferObject\CameraBufferObject.h" />
+    <ClInclude Include="source\MySource\BufferObject\FrameBufferObject.h" />
+    <ClInclude Include="source\MySource\BufferObject\UniformBufferObject.h" />
+    <ClInclude Include="source\MySource\BufferObject\VertexArray.h" />
+    <ClInclude Include="source\MySource\Collision\Collider.h" />
+    <ClInclude Include="source\MySource\Collision\Collision3D.h" />
+    <ClInclude Include="source\MySource\Collision\CollisionTable.h" />
+    <ClInclude Include="source\MySource\Collision\DrawCollision.h" />
+    <ClInclude Include="source\MySource\Collision\StdCollision.h" />
+    <ClInclude Include="source\MySource\Component\ActivTimer.h" />
+    <ClInclude Include="source\MySource\Component\Animator2D.h" />
+    <ClInclude Include="source\MySource\Component\AnimComponent.h" />
+    <ClInclude Include="source\MySource\Component\AudioEvent.h" />
+    <ClInclude Include="source\MySource\Component\Component.h" />
+    <ClInclude Include="source\MySource\Component\ComponentInclude.h" />
+    <ClInclude Include="source\MySource\Component\DamagePlayer.h" />
+    <ClInclude Include="source\MySource\Component\EndEffect.h" />
+    <ClInclude Include="source\MySource\Component\Explosion.h" />
+    <ClInclude Include="source\MySource\Component\FadeController.h" />
+    <ClInclude Include="source\MySource\Component\Falling.h" />
+    <ClInclude Include="source\MySource\Component\Gage.h" />
+    <ClInclude Include="source\MySource\Component\GLTFMeshRenderer.h" />
+    <ClInclude Include="source\MySource\Component\LightComponent.h" />
+    <ClInclude Include="source\MySource\Component\MaterialComponent.h" />
+    <ClInclude Include="source\MySource\Component\MeshRenderer.h" />
+    <ClInclude Include="source\MySource\Component\MoveTimer.h" />
+    <ClInclude Include="source\MySource\Component\NotOutOfRange.h" />
+    <ClInclude Include="source\MySource\Component\OutOfScreen.h" />
+    <ClInclude Include="source\MySource\Component\PlayerController.h" />
+    <ClInclude Include="source\MySource\Component\Renderer.h" />
+    <ClInclude Include="source\MySource\Component\Score.h" />
+    <ClInclude Include="source\MySource\Component\ScoreManager.h" />
+    <ClInclude Include="source\MySource\Component\ScrollObject.h" />
+    <ClInclude Include="source\MySource\Component\SpriteScaleRotation.h" />
+    <ClInclude Include="source\MySource\Component\text.h" />
+    <ClInclude Include="source\MySource\Component\WeaponUI.h" />
+    <ClInclude Include="source\MySource\DataStruct\AnimUseList.h" />
+    <ClInclude Include="source\MySource\DataStruct\DataStructInclude.h" />
+    <ClInclude Include="source\MySource\DataStruct\ImGuiTextGlyphRange.h" />
+    <ClInclude Include="source\MySource\DataStruct\InstanceModelDataList.h" />
+    <ClInclude Include="source\MySource\DataStruct\MovePram.h" />
+    <ClInclude Include="source\MySource\DataStruct\ShotTimer.h" />
+    <ClInclude Include="source\MySource\DataStruct\Status.h" />
+    <ClInclude Include="source\MySource\DataStruct\TextWindow.h" />
+    <ClInclude Include="source\MySource\DataStruct\useImGui.h" />
+    <ClInclude Include="source\MySource\Debug\Debug.h" />
+    <ClInclude Include="source\MySource\Debug\GLDebug.h" />
+    <ClInclude Include="source\MySource\Debug\MyDebugImGui.h" />
+    <ClInclude Include="source\MySource\GameObject\Actor\Archer.h" />
+    <ClInclude Include="source\MySource\GameObject\Actor\Beast.h" />
+    <ClInclude Include="source\MySource\GameObject\Actor\DefaultCube.h" />
+    <ClInclude Include="source\MySource\GameObject\Actor\LoadingGauge.h" />
+    <ClInclude Include="source\MySource\GameObject\Actor\Paladin.h" />
+    <ClInclude Include="source\MySource\GameObject\Actor\VillageMan.h" />
+    <ClInclude Include="source\MySource\GameObject\GameObject.h" />
+    <ClInclude Include="source\MySource\GameObject\ObjectManager.h" />
+    <ClInclude Include="source\MySource\GameObject\ObjectSprite.h" />
+    <ClInclude Include="source\MySource\GameObject\ObjectTag.h" />
+    <ClInclude Include="source\MySource\GameObject\Transform.h" />
+    <ClInclude Include="source\MySource\MoveCalc\Lerp.h" />
+    <ClInclude Include="source\MySource\Scene\Scene.h" />
+    <ClInclude Include="source\MySource\Scene\TitleScene.h" />
+    <ClInclude Include="source\MySource\Scene\VillageScene.h" />
+    <ClInclude Include="source\MySource\Shader\Shader.h" />
+    <ClInclude Include="source\MySource\State\IState.h" />
+    <ClInclude Include="source\MySource\System\FileSystem.h" />
+    <ClInclude Include="source\MySource\System\InputSystem.h" />
+    <ClInclude Include="source\MySource\Time\ClearTimeManager.h" />
+    <ClInclude Include="source\MySource\Time\StopAndSlowry.h" />
+    <ClInclude Include="source\MySource\Time\Time.h" />
+    <ClInclude Include="source\MySource\Time\Timer.h" />
+    <ClInclude Include="source\MySource\UI\ClearUI.h" />
+    <ClInclude Include="source\MySource\Window\GLFWWindow.h" />
+    <ClInclude Include="source\MySource\Window\Viewport.h" />
+    <ClInclude Include="source\stbi\ft2build.h" />
+    <ClInclude Include="source\stbi\image_DXT.h" />
+    <ClInclude Include="source\stbi\image_helper.h" />
+    <ClInclude Include="source\stbi\SOIL.h" />
+    <ClInclude Include="source\stbi\stb_image.h" />
+    <ClInclude Include="source\stbi\stb_image_aug.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="resource\audio\clear.wav" />
+    <Media Include="resource\audio\cure.wav" />
+    <Media Include="resource\audio\enter.wav" />
+    <Media Include="resource\audio\Explosion1.wav" />
+    <Media Include="resource\audio\Explosion2.wav" />
+    <Media Include="resource\audio\gage.wav" />
+    <Media Include="resource\audio\gammeover.wav" />
+    <Media Include="resource\audio\laser.wav" />
+    <Media Include="resource\audio\select.wav" />
+    <Media Include="resource\audio\stage1.wav" />
+    <Media Include="resource\audio\stage1Boss.wav" />
+    <Media Include="resource\audio\title.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="resource\ttf\x12y16pxMaruMonica.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="resource\shader\_ShaderUseName.txt" />
+    <Text Include="resource\txt\Input.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="FantasyWizard.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resource\textures\windowIcon32x32.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="packages\glm.0.9.9.800\build\native\glm.targets" Condition="Exists('packages\glm.0.9.9.800\build\native\glm.targets')" />
+    <Import Project="packages\Assimp.redist.3.0.0\build\native\Assimp.redist.targets" Condition="Exists('packages\Assimp.redist.3.0.0\build\native\Assimp.redist.targets')" />
+    <Import Project="packages\Assimp.3.0.0\build\native\Assimp.targets" Condition="Exists('packages\Assimp.3.0.0\build\native\Assimp.targets')" />
+    <Import Project="packages\glfw.3.3.8\build\native\glfw.targets" Condition="Exists('packages\glfw.3.3.8\build\native\glfw.targets')" />
+    <Import Project="packages\sdl2.redist.2.0.5\build\native\sdl2.redist.targets" Condition="Exists('packages\sdl2.redist.2.0.5\build\native\sdl2.redist.targets')" />
+    <Import Project="packages\sdl2.2.0.5\build\native\sdl2.targets" Condition="Exists('packages\sdl2.2.0.5\build\native\sdl2.targets')" />
+    <Import Project="packages\sdl2.nuget.redist.2.26.5\build\native\sdl2.nuget.redist.targets" Condition="Exists('packages\sdl2.nuget.redist.2.26.5\build\native\sdl2.nuget.redist.targets')" />
+    <Import Project="packages\sdl2.nuget.2.26.5\build\native\sdl2.nuget.targets" Condition="Exists('packages\sdl2.nuget.2.26.5\build\native\sdl2.nuget.targets')" />
+    <Import Project="packages\sdl2_ttf.nuget.redist.2.20.2\build\native\sdl2_ttf.nuget.redist.targets" Condition="Exists('packages\sdl2_ttf.nuget.redist.2.20.2\build\native\sdl2_ttf.nuget.redist.targets')" />
+    <Import Project="packages\sdl2_ttf.nuget.2.20.2\build\native\sdl2_ttf.nuget.targets" Condition="Exists('packages\sdl2_ttf.nuget.2.20.2\build\native\sdl2_ttf.nuget.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\glm.0.9.9.800\build\native\glm.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\glm.0.9.9.800\build\native\glm.targets'))" />
+    <Error Condition="!Exists('packages\Assimp.redist.3.0.0\build\native\Assimp.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Assimp.redist.3.0.0\build\native\Assimp.redist.targets'))" />
+    <Error Condition="!Exists('packages\Assimp.3.0.0\build\native\Assimp.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Assimp.3.0.0\build\native\Assimp.targets'))" />
+    <Error Condition="!Exists('packages\glfw.3.3.8\build\native\glfw.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\glfw.3.3.8\build\native\glfw.targets'))" />
+    <Error Condition="!Exists('packages\sdl2.redist.2.0.5\build\native\sdl2.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\sdl2.redist.2.0.5\build\native\sdl2.redist.targets'))" />
+    <Error Condition="!Exists('packages\sdl2.2.0.5\build\native\sdl2.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\sdl2.2.0.5\build\native\sdl2.targets'))" />
+    <Error Condition="!Exists('packages\sdl2.nuget.redist.2.26.5\build\native\sdl2.nuget.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\sdl2.nuget.redist.2.26.5\build\native\sdl2.nuget.redist.targets'))" />
+    <Error Condition="!Exists('packages\sdl2.nuget.2.26.5\build\native\sdl2.nuget.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\sdl2.nuget.2.26.5\build\native\sdl2.nuget.targets'))" />
+    <Error Condition="!Exists('packages\sdl2_ttf.nuget.redist.2.20.2\build\native\sdl2_ttf.nuget.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\sdl2_ttf.nuget.redist.2.20.2\build\native\sdl2_ttf.nuget.redist.targets'))" />
+    <Error Condition="!Exists('packages\sdl2_ttf.nuget.2.20.2\build\native\sdl2_ttf.nuget.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\sdl2_ttf.nuget.2.20.2\build\native\sdl2_ttf.nuget.targets'))" />
+  </Target>
+</Project>

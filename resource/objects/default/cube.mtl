@@ -1,0 +1,5 @@
+newmtl whiteTexture
+Kd 1 1 1
+map_Kd texture\whiteTexture.png
+illum 2
+

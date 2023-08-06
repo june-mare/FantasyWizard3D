@@ -1,0 +1,12 @@
+newmtl Village_House_V4_Roof
+Kd 1 1 1
+map_Kd Village_House_V4_Roof_Albedo.png
+map_Bump Village_House_V4_Roof_Normal.png
+illum 2
+
+newmtl Village_House_V4_Wall
+Kd 1 1 1
+map_Kd Village_House_V4_Wall_Albedo.png
+map_Bump Village_House_V4_Wall_Normal.png
+illum 2
+

@@ -1,0 +1,169 @@
+InputList
+0 mouse_left
+1 mouse_right
+32 space
+39 apostrophe
+44 comma 
+45 minus
+46 period 
+47 slash 
+48 zero
+49 one
+50 second
+51 three
+52 four
+53 five
+54 six 
+55 seven
+56 eight
+57 nine 
+59 semicolon 
+61 equal
+65 a
+66 b
+67 c
+68 d
+69 e
+70 f
+71 g
+72 h
+73 i
+74 j
+75 k
+76 l
+77 m
+78 n
+79 o
+80 p
+81 q
+82 r
+83 s
+84 t
+85 u
+86 v
+87 w
+88 x
+89 y
+90 z
+91 left_bracket
+92 backslash
+93 right_bracket
+96 grave_accent
+256 escape
+257 enter
+258 tab
+259 backspace
+260 insert 
+261 delete 
+262 right
+263 left 
+264 down 
+265 up 
+266 page_up 
+267 page_down
+268 home
+269 end 
+280 caps_lock
+281 scroll_lock 
+282 num_lock
+283 proint_screen
+284 pause
+290 f1
+291 f2
+292 f3
+293 f4
+294 f5
+295 f6
+296 f7
+297 f8
+298 f9
+299 f10 
+300 f11
+301 f12
+302 f13
+303 f14
+304 f15
+305 f16
+306 f17
+307 f18
+308 f19
+309 f20
+310 f21
+311 f22
+312 f23
+313 f24
+314 f25
+320 kp_zero 
+321 kp_one  
+322 kp_two  
+323 kp_three
+324 kp_four 
+325 kp_five 
+326 kp_six  
+327 kp_seven
+328 kp_eight
+329 kp_nine 
+330 kp_decimal
+331 kp_divide   
+332 kp_multiply 
+333 kp_subtract 
+334 kp_add      
+335 kp_enter    
+336 kp_equal    
+340 left_shift   
+341 left_control 
+342 left_alt     
+343 left_super   
+344 right_shift  
+345 right_control
+346 right_alt    
+347 right_super  
+348 menu 
+end
+CommandList
+right 68
+jump 32
+left 65
+front 87
+lock 345
+back 83
+atacck 344
+talk 84
+end
+tag
+tagPlayer
+tagEnemy
+tagObject
+end
+player
+HP 15
+ATK 25.5
+DEF 12
+LUK 10
+end
+archer
+HP 15
+ATK 15.5
+DEF 12
+LUK 15
+end
+paladin
+HP 30
+ATK 20.5
+DEF 10
+LUK 8
+end
+beast
+HP 80
+ATK 25.5
+DEF 5
+LUK 10
+end
+villageMan
+end
+beast
+HP 80
+ATK 25.5
+DEF 5
+LUK 10
+end

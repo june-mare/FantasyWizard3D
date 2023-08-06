@@ -1,0 +1,6 @@
+newmtl Barrel
+Kd 1 1 1
+map_Kd Barrel.png
+map_Bump Barrel_normal.png
+illum 2
+

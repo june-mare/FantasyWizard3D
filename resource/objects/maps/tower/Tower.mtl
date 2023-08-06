@@ -1,0 +1,36 @@
+newmtl Human_WatchTower_Door
+Kd 1 1 1
+map_Kd Human_Watchtower_Human_WatchTower_Door_AlbedoTransparency.png
+map_Bump Human_Watchtower_Human_WatchTower_Door_Normal.png
+illum 2
+
+newmtl Human_WatchTower_Interior
+Kd 1 1 1
+map_Kd Human_Watchtower_Human_WatchTower_Interior_AlbedoTransparency.png
+map_Bump Human_Watchtower_Human_WatchTower_Interior_Normal.png
+illum 2
+
+newmtl Human_WatchTower_Top
+Kd 1 1 1
+map_Kd Human_Watchtower_Human_WatchTower_Top_AlbedoTransparency.png
+map_Bump Human_Watchtower_Human_WatchTower_Top_Normal.png
+illum 2
+
+newmtl Human_WatchTower_Buttom
+Kd 1 1 1
+map_Kd Human_Watchtower_Human_WatchTower_Buttom_AlbedoTransparency.png
+map_Bump Human_Watchtower_Human_WatchTower_Buttom_Normal.png
+illum 2
+
+newmtl Human_WatchTower_RaceColor
+Kd 0.291955 0.340413 0.6617647
+map_Kd Human_Watchtower_Human_WatchTower_RaceColor_AlbedoTransparency.png
+map_Bump Human_Watchtower_Human_WatchTower_RaceColor_Normal.png
+illum 2
+
+newmtl Human_WallTorch
+Kd 1 1 1
+map_Kd Human_WallTorch_Human_WallTorch_AlbedoTransparency.png
+map_Bump Human_WallTorch_Human_WallTorch_Normal.png
+illum 2
+

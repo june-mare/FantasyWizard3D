@@ -1,0 +1,119 @@
+newmtl Wall01
+Kd 0.07618538 0.07618538 0.07618538
+illum 2
+
+newmtl Window
+Kd 1 0 0
+illum 2
+
+newmtl Village_WindMill_Roof
+Kd 1 1 1
+map_Kd Village_WindMill_Roof_Albedo.png
+map_Bump Village_WindMill_Roof_Normal.png
+illum 2
+
+newmtl Wall02
+Kd 0.1523246 0.1523246 0.1523246
+illum 2
+
+newmtl rpgpp_lt_mat_a
+Kd 1 1 1
+map_Kd rpgpp_lt_tex_a.png
+illum 2
+
+newmtl Village_WindMill_Wood
+Kd 1 1 1
+map_Kd Village_WindMill_Wood_Albedo.png
+map_Bump Village_WindMill_Wood_Normal.png
+illum 2
+
+newmtl Metal
+Kd 0.06997373 0.06997373 0.06997373
+illum 2
+
+newmtl Wood
+Kd 0.1237098 0.03523403 0
+illum 2
+
+newmtl Village_WindMill_Vr
+Kd 1 1 1
+map_Kd Village_WindMill_Vr_Normal.png
+illum 2
+
+newmtl Village_WindMill_Wall
+Kd 1 1 1
+map_Kd Village_WindMill_Wall_Normal.png
+illum 2
+
+newmtl Top
+Kd 0.2079158 0.2079158 0.2079158
+illum 2
+
+newmtl Grass (Lawn)
+Kd 1 1 1
+map_Kd Grass (Lawn).png
+illum 2
+
+newmtl Barrel
+Kd 1 1 1
+map_Kd Barrel.png
+illum 2
+
+newmtl Baker_house
+Kd 1 1 1
+map_Kd Baker_house.png
+illum 2
+
+newmtl Free_Tree
+Kd 0.8 0.8 0.8
+map_Kd tree_diffuse.png
+illum 2
+
+newmtl Fancy_Tavern
+Kd 1 1 1
+Ks 0 0 0
+map_Kd Fancy_Tavern.png
+illum 2
+
+newmtl Decor
+Kd 1 1 1
+Ks 0 0 0
+map_Kd Decor.png
+illum 2
+
+newmtl Human_WatchTower_Door
+Kd 1 1 1
+map_Kd Human_Watchtower_Human_WatchTower_Door_AlbedoTransparency.png
+map_Bump Human_Watchtower_Human_WatchTower_Door_Normal.png
+illum 2
+
+newmtl Human_WatchTower_Interior
+Kd 1 1 1
+map_Kd Human_Watchtower_Human_WatchTower_Interior_AlbedoTransparency.png
+map_Bump Human_Watchtower_Human_WatchTower_Interior_Normal.png
+illum 2
+
+newmtl Human_WatchTower_Top
+Kd 1 1 1
+map_Kd Human_Watchtower_Human_WatchTower_Top_AlbedoTransparency.png
+map_Bump Human_Watchtower_Human_WatchTower_Top_Normal.png
+illum 2
+
+newmtl Human_WatchTower_Buttom
+Kd 1 1 1
+map_Kd Human_Watchtower_Human_WatchTower_Buttom_AlbedoTransparency.png
+map_Bump Human_Watchtower_Human_WatchTower_Buttom_Normal.png
+illum 2
+
+newmtl Human_WatchTower_RaceColor
+Kd 0.291955 0.340413 0.6617647
+map_Kd Human_Watchtower_Human_WatchTower_RaceColor_AlbedoTransparency.png
+map_Bump Human_Watchtower_Human_WatchTower_RaceColor_Normal.png
+illum 2
+
+newmtl Human_WallTorch
+Kd 1 1 1
+map_Kd Human_WallTorch_Human_WallTorch_AlbedoTransparency.png
+map_Bump Human_WallTorch_Human_WallTorch_Normal.png
+illum 2
+

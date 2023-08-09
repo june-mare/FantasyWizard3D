@@ -340,7 +340,8 @@ int Engine::MainLoop()
 				glUseProgram(animShader->id);
 				animShader->SetMat4("shadowMat", matShadowTexture);
 				glBindFramebuffer(GL_FRAMEBUFFER, *fboGameWindow);
-				viewport.LoadScreenSize();*/
+				viewport.LoadScreenSize();
+			*/
 			}
 
 			glEnable(GL_DEPTH_TEST);
@@ -359,7 +360,7 @@ int Engine::MainLoop()
 				glEnable(GL_BLEND);
 				glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 			}
-
+			
 			//フレームバッファを通常に戻す
 			glBindFramebuffer(GL_FRAMEBUFFER, 0);
 			viewport.LoadScreenSize();
